@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- XDG portal: a filter selected in the save dialog now sets the extension of the returned file name when the portal left the old one (GTK does), as the macOS and Windows save dialogs do. An extension the user typed is kept, and a name is never changed to one of an existing file.
+
 ## 0.18.0
 
 - Fix some GTK3 memory leaks
