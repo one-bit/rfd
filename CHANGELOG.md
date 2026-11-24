@@ -4,6 +4,7 @@
 
 - XDG portal: a filter selected in the save dialog now sets the extension of the returned file name when the portal left the old one (GTK does), as the macOS and Windows save dialogs do. An extension the user typed is kept, and a name is never changed to one of an existing file.
 - macOS: a save dialog with a format picker now keeps the extension of the name field in step with the selected format. The format's first extension is added to a name that has none, and replaces the extension of the previous format or of the name given to `set_file_name`. An extension the user typed is kept, and so is one the selected format lists. A format whose first extension is `*` or empty changes nothing. Before, the panel refused a name whose extension the selected format did not allow.
+- Windows: the extension of the path a save dialog returns now follows the file type selected in the dialog. The file type's first extension is added to a name that has none, and replaces the extension of the name given to `set_file_name`. An extension the user typed is kept, and so is one the file type lists. A file type whose first extension is `*` or empty changes nothing, and a name is never changed to one of an existing file.
 
 ## 0.18.0
 
